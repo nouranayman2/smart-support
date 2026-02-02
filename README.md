@@ -39,6 +39,7 @@ python3 manage.py migrate
 
 
 cd ../smart-support-frontend
+
 npm install
 
 
