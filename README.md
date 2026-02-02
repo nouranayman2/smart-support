@@ -29,13 +29,9 @@ The backend is a Django REST API that stores tickets in SQLite and generates an 
 
 
 cd smart-support-inbox
-
 python3 -m venv .venv
-
 source .venv/bin/activate
-
 ./.venv/bin/python3 -m pip install -r requirements.txt
-
 python3 manage.py migrate
 
 
@@ -43,7 +39,6 @@ python3 manage.py migrate
 
 
 cd ../smart-support-frontend
-
 npm install
 
 
@@ -55,7 +50,6 @@ npm install
 cd smart-support-inbox
 
 source .venv/bin/activate
-
 python3 manage.py runserver
 
 
@@ -77,9 +71,7 @@ Creating admin
 
 
 cd smart-support-inbox
-
 source .venv/bin/activate
-
 python3 manage.py createsuperuser
 
 
@@ -88,9 +80,7 @@ All Backend tests run with this command:
 
 
 cd smart-support-inbox
-
 source .venv/bin/activate
-
 python3 -m pytest
 
 
